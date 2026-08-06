@@ -2,7 +2,6 @@ package edu.unisabana.dyas.patterns.observer;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
-import java.util.Observable;
 import edu.unisabana.dyas.patterns.observer.impl.ConfigurationManager;
 import edu.unisabana.dyas.patterns.observer.impl.observers.DateFormatObserver;
 import edu.unisabana.dyas.patterns.observer.impl.observers.MoneyFormatObserver;

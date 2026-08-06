@@ -31,6 +31,15 @@ Solución, con el patrón Observer:
 ### Ejecucion
 
 ```
-gradle build
-gradle run
+./gradlew build
+./gradlew run
 ```
+
+### Criterios de evaluación
+
+* Diseño.
+	1. `ConfigurationManager` (el sujeto observado) no debe conocer las clases concretas de sus observadores, solo la interfaz `IObserver`.
+	2. Agregar un nuevo observador (por ejemplo, uno que registre los cambios en un log) no debe requerir modificar `ConfigurationManager` ni los observadores existentes.
+* Funcionalidad.
+	1. Al cambiar `defaultDateFormat` o `moneyFormat`, todos los observadores registrados en ese momento deben ser notificados automáticamente.
+	2. Un observador removido con `removeObserver` no debe recibir notificaciones posteriores.
