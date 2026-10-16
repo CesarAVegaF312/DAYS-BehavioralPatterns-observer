@@ -31,8 +31,8 @@ Solución, con el patrón Observer:
 ### Ejecucion
 
 ```
-./gradlew build
-./gradlew run
+mvn compile
+mvn exec:java
 ```
 
 ### Criterios de evaluación
